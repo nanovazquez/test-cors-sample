@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CORS Test</title>
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/1.1.1/css/ionic.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <h2>Test CORS</h2>
+    <form>
+      <div class="row">
+        <div class="col">
+          <label class="item item-input item-select">
+            <div class="input-label"> HTTP Method </div>
+            <select id="method" name="method" required></select>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label class="item item-input">
+            <span class="input-label">URL</span>
+            <input type="text" id="url" name="url" required />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="item item-checkbox">
+            <label class="checkbox">
+              <input type="checkbox" id="supportsCredentials" name="supportsCredentials">
+            </label>
+            <span>Supports credentials</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label class="item item-input">
+            <span class="input-label">Custom headers</span>
+            <input type="text" id="custom-headers" name="custom-headers" />
+          </label>
+          <span>Note: Requests with custom headers will be preflighted</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button id="test" class="button button-positive button-block">Test!</button>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col">
+        <p id="result"></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

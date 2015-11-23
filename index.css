@@ -1,0 +1,11 @@
+body{
+  margin: 25px;
+}
+
+.row{
+  max-width: 600px;
+}
+
+input{
+	text-align: right;
+}
