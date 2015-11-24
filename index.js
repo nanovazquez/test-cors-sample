@@ -56,19 +56,21 @@
 
   function transferComplete(e){
     console.log("Transfer completed");
-    console.log(e);
-    showResults(e.currrentTarget);
+    displayResults(e);
   }
 
   function transferFailed(e){
     console.log("Transfer failed");
-    console.log(e);
-    showResults(e.currrentTarget);
+    displayResults(e);
   }
 
   function transferCanceled(e){
     console.log("Transfer canceled");
+    displayResults(e);
+  }
+
+  function displayResults(e){
     console.log(e);
-    showResults(e.currrentTarget);
+    showResults(e.currentTarget);
   }
 })();
